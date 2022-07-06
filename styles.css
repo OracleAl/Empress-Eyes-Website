@@ -117,16 +117,15 @@ nav > a {
     position: absolute;
     align-items: center;
     width: 100%;
-    opacity: 50%;
+    opacity: 80%;
     z-index: -1;
 }
 #landing_title {
-    top: 5%;
+    padding-top: 20px;
     color: rgb(180, 180, 180);
     font-family: 'Titan One';
     font-size: 45px;
     letter-spacing: 5px;
-    /* margin: 1%; */
     text-align: center;
 }
 #landing_iframe {
