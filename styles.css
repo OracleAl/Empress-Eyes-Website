@@ -5,6 +5,7 @@
 }
 body {
     background-color: rgb(10, 10, 10);
+    height: 100vh;
 }
 main {
     display: flex;
@@ -96,11 +97,13 @@ nav > a {
 .empress_eyes {
     display: flex;
     justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 #empress_eyes_image {
     width: 100px;
     border: 3px solid rgb(102, 43, 114);
-    border-radius: 50px;
+    border-radius: 100px;
 }
 .landing_main_container {
     display: flex;
@@ -110,9 +113,9 @@ nav > a {
     width: 90%;
     display: flex;
     justify-content: center;
-    gap: 5%;
-    column-gap: 5%;
-    margin-top: 10%;
+    gap: 10%;
+    column-gap: 10%;
+    /* margin-top: 10%; */
 }
 .landing_main > a {
     width: 100%;
@@ -120,11 +123,12 @@ nav > a {
     font-family: 'Dangrek', sans-serif;
     font-size: 20px;
     text-decoration: none;
-    color: white;
+    color: rgb(245, 219, 255);
     border: 3px solid rgb(102, 43, 114);
     background-color: rgba(0, 0, 0, 0.397);
-    border-radius: 20px; 
-    margin-bottom: 5%;
+    border-radius: 100px; 
+    margin-bottom: 10%;
+    padding: 5px;
 }
 .social_tabs {
     width: 100px;
@@ -157,9 +161,9 @@ nav > a {
 .social_media_container {
     position: absolute;
     left: 50%;
-    transform: translate(-50%, -50%);
-    margin-bottom: 20px;
-    bottom: 0px;
+    transform: translate(-50%);
+    margin-bottom: 0px;
+    bottom: 20px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -196,37 +200,14 @@ nav > a {
   }
 }
 
-/* @media only screen and (min-width: 600px) {
-    #landing_title {
-        font-size: 80px;
+@media only screen and (min-width: 600px) {
+    body {
         position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
+        width: 600px;
+        left: 50%;
+        transform: translate(-50%);
     }
-    #landing_img {
-        src: url();
-        top: -40%;
-        position: relative;
-    }
-    .landing_body {
-        height: 148vh;
-        width: 100vw;
-        overflow: hidden;
-    }
-    .landing_main {
-        margin-top: 0;
-        margin-bottom: -500px;
-        gap: 13%;
-        height: 0;
-    }
-    .social_tabs {
-        position: absolute;
-        margin-top: -80vh;
-        margin-left: -3.5vw;
-        width: 150px;
-    }
-} */
+}
 
 @media only screen and (max-width: 600px) {
     #landing_img {
