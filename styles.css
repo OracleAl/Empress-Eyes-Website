@@ -97,12 +97,12 @@ nav > a {
 .empress_eyes {
     display: flex;
     justify-content: center;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    /* margin-top: 5%; */
+    margin-bottom: 10%;
 }
 #empress_eyes_image {
     width: 100px;
-    border: 3px solid rgb(102, 43, 114);
+    border: 3px solid rgb(230, 168, 255);
     border-radius: 100px;
 }
 .landing_main_container {
@@ -129,6 +129,9 @@ nav > a {
     border-radius: 100px; 
     margin-bottom: 10%;
     padding: 5px;
+}
+.landing_main > a:hover {
+    background-color: rgb(102, 43, 114);
 }
 .social_tabs {
     width: 100px;
@@ -206,6 +209,9 @@ nav > a {
         width: 600px;
         left: 50%;
         transform: translate(-50%);
+    }
+    #landing_img {
+        height: 100vh;
     }
 }
 
