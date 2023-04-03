@@ -3,194 +3,113 @@
     padding: 0;
     border: 0;
 }
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
 body {
-    background-color: rgb(10, 10, 10);
-    height: 100vh;
-    overflow: hidden;
+    background-color: black;
+}
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+header > a {
+    color: white;
+    align-items: center;
+    flex-direction: row;
+}
+#logo {
+    font-size: 6vh;
+    letter-spacing: 5px;
+    text-shadow: 5px 5px black;
+    font-family: 'Lemon', cursive;
+}
+.header_links {
+    text-transform: uppercase;
+    font-size: 3vh;
+    font-family: 'Tenor Sans', sans-serif;
+    background: linear-gradient(currentColor, currentColor) bottom / 0 .1em no-repeat;
+	transition: 0.5s background-size;
+    text-shadow: 2px 2px 2px black;
+}
+.header_links:hover {
+    background-size: 100% .1em;
 }
 main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: url(images/filmbackgroundphoto.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Lemon', cursive;
+    z-index: 1;
 }
-footer {
-    display: flex;
-    justify-content: center;
-}
-.social_img {
-    width: 75px;
-}
-.social_img:hover {
-    opacity: 50%;
-}
-#bgimage {
-    width: 95%;
-    border-radius: 12px;
-}
-nav {
-    width: 100%;
-    height: 20%;
-    z-index: 2;
-    display: flex;
-    flex-direction: row;
-    gap: 10%;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    justify-content: center;
-}
-nav > a {
-    color: white;
-    text-decoration: none;
-    font-family: 'Lato', sans-serif;
-    font-size: 25px;
-}
-#home_iframe {
-    margin: 3%;
-}
-.music_images_container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.music_images {
-    width: 40%;
-    height: 40%;
-    padding: 5%;
-}
-.album_imgs {
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-}
-.album_imgs:hover {
-    opacity: 50%;
-}
-.album_text {
-    color: white;
+main > h1 {
+    position: relative;
     text-align: center;
-    font-family: 'Playfair Display', serif;
-    margin-top: 10px;
-    font-size: 30px;
-    letter-spacing: 3px;
+    padding-top: 0vh;
+    font-size: 6vh;
+    height: 8vh;
+    color: rgb(255, 255, 255);
+    letter-spacing: 5px;
+    text-shadow: 5px 5px black;
+    background-color: black;
 }
-.about_container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 3%;
+#new_stuff {
+    position: absolute;
+    z-index: 0;
+    width: 20vw;
+    left: 10vw;
+    bottom: 15vh;
 }
-#stage_photo {
-    width: 45%;
-    margin: 3%;
-    border-radius: 20px;
+#skeleton_garden {
+    width: 20vw;
 }
-#about_text_one {
-    width: 40%;
-    margin: 3%;
-    font-size: 40px;
-    color: white;
-    text-align: center;
-}
-
-/* Landing Page */
-.empress_eyes {
-    display: flex;
-    justify-content: center;
-    /* margin-top: 5%; */
-    margin-bottom: 10%;
-}
-#empress_eyes_image {
-    width: 100px;
-    height: 100px;
-    border: 3px solid rgb(230, 168, 255);
-    border-radius: 100px;
-}
-.landing_main_container {
-    display: flex;
-    justify-content: center;
-}
-.landing_main {
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    gap: 10%;
-    column-gap: 10%;
-}
-.landing_main > a {
-    width: 100%;
-    text-align: center;
-    font-family: 'Dangrek', sans-serif;
-    font-size: 20px;
-    text-decoration: none;
-    color: rgb(245, 219, 255);
-    border: 3px solid rgb(102, 43, 114);
-    background-color: rgba(0, 0, 0, 0.397);
-    border-radius: 100px; 
-    margin-bottom: 10%;
-    padding: 5px;
-}
-.landing_main > a:hover {
-    background-color: rgb(102, 43, 114);
-}
-.social_tabs {
-    width: 100px;
-    height: 50px;
+#skeleton_garden:hover {
     opacity: 70%;
 }
-.social_tabs:hover {
-    opacity: 100%;
-}
-#landing_img {
-    position: absolute;
-    align-items: center;
-    width: 100%;
-    opacity: 80%;
-    z-index: -1;
-}
-#landing_title {
-    padding-top: 20px;
-    color: rgb(230, 168, 255);
-    font-family: 'Dangrek', sans-serif;
-    font-size: 45px;
-    letter-spacing: 5px;
+h2 {
     text-align: center;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 3vh;
+    color: white;
+    text-decoration: none;
+    
+    /* text-shadow: 5px 5px black; */
 }
-#landing_iframe {
+#merch {
     position: absolute;
-    top: 100%;
+    width: 20vw;
+    right: 10vw;
+    bottom: 15vh;
 }
-.social_media_container {
+#merch_image {
+    width: 20vw;
+}
+#merch_image:hover {
+    opacity: 70%;
+}
+footer {
     position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    margin-bottom: 0px;
-    bottom: 20px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    gap: 20%;
+    right: 5vw;
+    bottom: 0px;
 }
-.social_media_images {
-    width: 50px;
-    height: 50px;
+.social_images
+{
+    width: 5vw;
+    
 }
-
-@media only screen and (min-width: 600px) {
-    body {
-        position: absolute;
-        width: 600px;
-        left: 50%;
-        transform: translate(-50%);
-    }
-    #landing_img {
-        height: 100vh;
-    }
+.social_images:hover {
+    background-color: rgb(79, 36, 114);
 }
-
-@media only screen and (max-width: 600px) {
-    #landing_img {
-        height: 100%;
-    }
+#contact_info {
+    position: absolute;
+    left: 1vw;
+    bottom: 1vw;
+    text-shadow: 2px 2px black;
 }
