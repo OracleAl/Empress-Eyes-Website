@@ -23,8 +23,21 @@ header > a {
 #logo {
     font-size: 6vh;
     letter-spacing: 5px;
-    text-shadow: 5px 5px black;
+    text-shadow: 5px 5px solid black;
     font-family: 'Lemon', cursive;
+    background: linear-gradient(90deg, blue, purple, rgb(255, 62, 94));
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 10s reverse infinite;
+}
+@keyframes animate{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
 }
 .header_links {
     text-transform: uppercase;
@@ -41,7 +54,6 @@ main {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background: url(images/filmbackgroundphoto.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -112,4 +124,17 @@ footer {
     left: 1vw;
     bottom: 1vw;
     text-shadow: 2px 2px black;
+}
+#floating_pic {
+    position: absolute;   
+    left: 34vw;
+    top: 15vh;
+    width: 32vw;
+}
+
+/* Shows */
+#show_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
